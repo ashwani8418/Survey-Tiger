@@ -19,6 +19,7 @@ function App() {
 		dispatch(createSurvey()).then(unwrapResult).then((newSurveyId) => history.push('/create/' + newSurveyId));
 	};
 
+	
 	return (
 		<div className="App">
 			<header className="App-header">
