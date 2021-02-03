@@ -10,7 +10,6 @@ import TakeSurvey from './components/take-survey'
 import ConfirmSurvey from './components/confirm-survey'
 import Survey from './components/survey'
 import SurveyResult from './components/survey-result';
-
 function App() {
 	const dispatch = useDispatch();
 	const history = useHistory();
@@ -19,7 +18,7 @@ function App() {
 		dispatch(createSurvey()).then(unwrapResult).then((newSurveyId) => history.push('/create/' + newSurveyId));
 	};
 
-	
+
 	return (
 		<div className="App">
 			<header className="App-header">
